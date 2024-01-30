@@ -39,4 +39,4 @@ Route::put ('recuperar/senha/cliente', [ClientesController::class, 'recuperarSen
 
 //ADM
 
-Route::put ('recuperar/senha/ADM', [ADMController::class, 'recuperarSenha']);
+Route::put ('adm/recuperar/senha', [ADMController::class, 'recuperarSenha']);
