@@ -37,6 +37,8 @@ Route::get('find/cliente/{id}',[ClientesController::class, 'pesquisarPorId']);
 
 Route::put ('recuperar/senha/cliente', [ClientesController::class, 'recuperarSenha']);
 
+Route::get('all/clientes',[ClientesController::class, 'retornarTodosClientes']);
+
 //ADM
 
 Route::put ('adm/recuperar/senha', [ADMController::class, 'recuperarSenha']);

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('a_d_m_s', function (Blueprint $table) {
             $table->id();
             $table->string('email', 120)->unique()->nullable(false);
+            $table->string('cpf', 11 )->unique()->nullable(false);
             $table->timestamps();
         });
     }
